@@ -5,10 +5,18 @@ int main()
 {
     BST<int> bst;
 
-    bst.insert(10);
-    bst.insert(5);
-    bst.insert(15);
+    bst.insert(34);
+    bst.insert(86);
+    bst.insert(48);
     bst.insert(7);
+    bst.insert(54);
+    bst.insert(69);
+    bst.insert(49);
+    bst.insert(87);
+    bst.insert(4);
+    bst.insert(9);
+    bst.insert(1);
+    bst.insert(89);
 
     std::cout << "Pre-order traversal: ";
     bst.preOrder();
@@ -24,10 +32,10 @@ int main()
     std::cout << std::endl;
 
     std::cout << "Contains 7: " << (bst.contains(7) ? "Yes" : "No") << std::endl;
-    std::cout << "Contains 20: " << (bst.contains(20) ? "Yes" : "No") << std::endl;
+    std::cout << "Contains 16: " << (bst.contains(20) ? "Yes" : "No") << std::endl;
 
-    bst.remove(5);
-    std::cout << "In-order traversal after removing 5: ";
+    bst.remove(9);
+    std::cout << "In-order traversal after removing 9: ";
     bst.inOrder();
 
     return 0;
